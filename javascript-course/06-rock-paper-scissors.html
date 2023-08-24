@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles-rock-paper-scissors.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="title-container"><h3 class="title">Rock Paper Scissors</h3></div>
+
+    <!-- Rock Paper Scissors button -->
+    <div class="rock-paper-scissors-container">
+      <!-- Rock button -->
+      <div class="rock-button-container">
+        <button class="rock-button"
+      onclick="
+  const randomNumber = Math.random();
+  let computerMove = '';
+  if (randomNumber >= 0 && randomNumber < 1/3 ){
+   computerMove = 'rock';
+  } else if (randomNumber > 1/3 && randomNumber < 2/3) {
+     computerMove = 'paper';
+  } else if (randomNumber >= 2/3 && randomNumber < 1) {
+     computerMove = 'scissors';
+  }
+  console.log(computerMove);
+  
+  let result = '';
+  if (computerMove === 'rock') {
+    result = 'tie';
+  } else if (computerMove === 'paper') {
+    result = 'You lose!';
+  } else if (computerMove === 'scissors') {
+    result = 'You win!';
+  }
+
+  alert(`You picked rock . Computer picked ${computerMove}. ${result}.`);
+  "
+    >
+     <img class="rock-image" src="/icons/rock-emoji.png">
+    </button>
+      </div>
+
+      <div class="paper-button-container">
+        <button class="paper-button"
+        onclick="
+      const randomNumber = Math.random();
+    let computerMove = '';
+    if (randomNumber >= 0 && randomNumber < 1/3 ){
+     computerMove = 'rock';
+    } else if (randomNumber > 1/3 && randomNumber < 2/3) {
+       computerMove = 'paper';
+    } else if (randomNumber >= 2/3 && randomNumber < 1) {
+       computerMove = 'scissors';
+    }
+    console.log(computerMove);
+    
+    let result = '';
+    if (computerMove === 'rock') {
+      result = 'You win!';
+    } else if (computerMove === 'paper') {
+      result = 'Tie';
+    } else if (computerMove === 'scissors') {
+      result = 'You lose!';
+    }
+  
+    alert(`You picked paper . Computer picked ${computerMove}. ${result}.`);
+      
+      "
+      >
+        <img class="paper-image" src="/icons/paper-emoji.png" >
+      </button>
+
+      </div>
+      <div class="scissors-button-container">
+        <button class="scissors-button"
+      onclick="
+     const randomNumber = Math.random();
+  let computerMove = '';
+  if (randomNumber >= 0 && randomNumber < 1/3 ){
+   computerMove = 'rock';
+  } else if (randomNumber > 1/3 && randomNumber < 2/3) {
+     computerMove = 'paper';
+  } else if (randomNumber >= 2/3 && randomNumber < 1) {
+     computerMove = 'scissors';
+  }
+  console.log(computerMove);
+  
+  let result = '';
+  if (computerMove === 'rock') {
+    result = 'You lose!';
+  } else if (computerMove === 'paper') {
+    result = 'You win!';
+  } else if (computerMove === 'scissors') {
+    result = 'Tie';
+  }
+
+  alert(`You picked scissors . Computer picked ${computerMove}. ${result}.`);
+    "
+    >
+      <img class="scissors-image" src="/icons/scissors-emoji.png">
+    </button>
+      </div>
+    </div>
+
+    
+    
+    <script>
+      /*
+      const cartQuantity = 5;
+      if (cartQuantity) {
+        console.log('cart has products')
+      }
+      */
+     const result = 0 ? 'truthy': 'falsy';
+     console.log(result);
+
+     const message = 1 && 'hello';
+     console.log(message);
+
+     const currency = 'EUR' || 'USD'
+     console.log(currency);
+    </script>
+  </body>
+</html>
